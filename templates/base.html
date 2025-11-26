@@ -6,12 +6,12 @@
   <title>{% block title %} Base Title {% endblock title %}</title>
 </head>
 <body>
+  {% include "components/navbar.html" %}
+
   {% block body %}
     Base Body!
   {% endblock body %}
 
-  <footer>
-    &copy; Django TODO App
-  </footer>
+  {% include "components/footer.html" %}
 </body>
 </html>
